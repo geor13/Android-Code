@@ -1,0 +1,35 @@
+<resources>
+    <string name="app_name">Bluetooth_Connect</string>
+    <string name="drills">10 ΣΟΥΤ ΜΕ ΤΟ ΕΝΑ ΧΕΡΙ ΣΕ ΜΠΑΣΚΕΤΑ</string>
+    <string name="second">ΔΕΥΤΕΡΟ ΣΟΥΤ</string>
+    <string name="third">ΤΡΙΤΟ ΣΟΥΤ</string>
+    <string name="fourth">ΤΕΤΑΡΤΟ ΣΟΥΤ</string>
+    <string name="fifth">ΠΕΜΠΤΟ ΣΟΥΤ</string>
+    <string name="sixth">ΕΚΤΟ ΣΟΥΤ</string>
+    <string name="seventh">ΕΒΔΟΜΟ ΣΟΥΤ</string>
+    <string name="eigth">ΟΓΔΟΟ ΣΟΥΤ</string>
+    <string name="ninth">ΕΝΑΤΟ ΣΟΥΤ</string>
+    <string name="tenth">ΔΕΚΑΤΟ ΣΟΥΤ</string>
+    <string name="first">ΠΡΩΤΟ ΣΟΥΤ</string>
+    <string name="prompt">ΡΙΞΕ ΤΟ ΠΡΩΤΟ ΣΟΥ ΣΟΥΤ</string>
+    <string name="congrats">ΧΑΡΗ ΣΤΗΝ ΔΟΥΛΕΙΑ ΠΟΥ ΕΚΑΝΕΣ ΕΙΣΑΙ ΕΝΑ ΒΗΜΑ ΠΙΟ ΚΟΝΤΑ ΣΤΟ ΝΑ ΓΙΝΕΙΣ ΕΝΑΣ ΠΡΑΓΜΑΤΙΚΑ ΣΠΟΥΔΑΙΟΣ ΣΟΥΤΕΡ.</string>
+    <string name="ontinue">ΣΥΝΕΧΕΙΑ</string>
+    <string name="wel_done">ΜΠΡΑΒΟ ΣΟΥ</string>
+    <string name="final_prompt">ΣΥΜΠΛΗΡΩΣΕ ΤΑ ΣΟΥΤ ΣΤΑ ΟΠΟΙΑ ΠΕΤΥΧΕΣ ΚΑΛΑΘΙ</string>
+    <string name="theEnd">ΤΕΛΟΣ</string>
+    <string name="made">ΕΥΣΤΟΧΟ</string>
+    <string name="wow">ΣΥΓΧΑΡΗΤΗΡΙΑ !!!</string>
+    <string name="letting_know">ΜΟΛΙΣ ΟΛΟΚΛΗΡΩΣΕΣ ΤΗΝ ΑΣΚΗΣΗ ΠΑΡΑΚΑΤΩ ΘΑ ΔΕΙΣ ΤΗΝ ΑΜΟΙΒΗ ΣΟΥ</string>
+    <string name="overall">ΣΥΝΟΛΙΚΗ ΒΑΘΜΟΛΟΓΙΑ ΤΕΧΝΙΚΗΣ</string>
+    <string name="mark">ΒΑΘΜΟΛΟΓΙΑ</string>
+    <string name="total_made">ΣΥΝΟΛΙΚΑ ΕΥΣΤΟΧΑ ΣΟΥΤ</string>
+    <string name="badges_total">ΣΥΝΟΛΙΚΑ ΕΜΒΛΗΜΑΤΑ ΠΟΥ ΚΕΡΔΙΣΕΣ</string>
+    <string name="points_total">ΣΥΝΟΛΙΚΟΙ ΠΟΝΤΟΙ ΕΜΠΕΙΡΙΑΣ ΠΟΥ ΚΕΡΔΙΣΕΣ</string>
+    <string name="golden_badge_title">ΧΡΥΣΟ ΕΜΒΛΗΜΑ</string>
+    <string name="bronze_badge_title">ΧΑΛΚΙΝΟ ΕΜΒΛΗΜΑ</string>
+    <string name="silver_badge_title">ΑΡΓΥΡΟ ΕΜΒΛΗΜΑ</string>
+    <string name="pearl_badge_title">ΠΟΛΥΤΙΜΟ ΕΜΒΛΗΜΑ</string>
+    <string name="green_badge">ΤΟ ΠΡΑΣΙΝΟ ΕΜΒΛΗΜΑ ΤΟΥ ΜΑΘΗΤΕΥΟΜΕΝΟΥ </string>
+    <string name="yellow_badge">ΤΟ ΚΙΤΡΙΝΟ ΕΜΒΛΗΜΑ ΤΟΥ ΣΤΑΘΕΡΟΥ ΧΕΡΙΟΥ </string>
+
+</resources>

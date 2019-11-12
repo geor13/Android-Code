@@ -1,0 +1,586 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MadeShots">
+
+    <include
+        android:id="@+id/custom_bar"
+        layout="@layout/app_bar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/counter_button"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="8dp"
+        android:background="@drawable/float_button"
+        android:elevation="8dp"
+        android:text="0"
+        android:textColor="#FFFFFF"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+    </Button>
+
+    <ScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:scrollbars="none"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/the_end"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="190dp">
+
+                <TextView
+                    android:id="@+id/textView3"
+                    android:layout_width="323dp"
+                    android:layout_height="50dp"
+                    android:text="@string/final_prompt"
+                    android:textAlignment="center"
+                    android:textColor="#02ADD4"
+                    android:textSize="18dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent">
+
+                </TextView>
+
+                <Button
+                    android:id="@+id/next_screen"
+                    android:layout_width="157dp"
+                    android:layout_height="62dp"
+                    android:layout_marginTop="24dp"
+                    android:background="#02ADD4"
+                    android:text="@string/theEnd"
+                    android:textColor="#FFFFFF"
+                    android:textSize="20dp"
+                    android:onClick="onClickFinalScreen"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/textView3">
+
+                </Button>
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/tenth_shot"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/title_10"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="64dp"
+                    android:text="@string/tenth"
+                    android:textColor="#02ADD4"
+                    android:textSize="15dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent">
+
+                </TextView>
+
+                <Button
+                    android:id="@+id/made_10"
+                    android:layout_width="137dp"
+                    android:layout_height="33dp"
+                    android:layout_marginTop="8dp"
+                    android:background="@drawable/made_button"
+                    android:text="@string/made"
+                    android:textColor="#02D487"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/title_10">
+
+                </Button>
+
+                <SeekBar
+                    android:id="@+id/indicator_10"
+                    android:layout_width="320dp"
+                    android:layout_height="28dp"
+                    android:layout_marginTop="16dp"
+                    android:background="@drawable/ic_techniquebar"
+                    android:max="200"
+                    android:progressDrawable="@android:color/transparent"
+                    android:thumb="@drawable/ic_ellipse_47"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/made_10">
+
+                </SeekBar>
+
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/ninth_shot"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/title_9"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="64dp"
+                    android:text="@string/ninth"
+                    android:textColor="#02ADD4"
+                    android:textSize="15dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent">
+
+                </TextView>
+
+                <Button
+                    android:id="@+id/made_9"
+                    android:layout_width="137dp"
+                    android:layout_height="33dp"
+                    android:layout_marginTop="8dp"
+                    android:background="@drawable/made_button"
+                    android:text="@string/made"
+                    android:textColor="#02D487"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/title_9">
+
+                </Button>
+
+                <SeekBar
+                    android:id="@+id/indicator_9"
+                    android:layout_width="320dp"
+                    android:layout_height="28dp"
+                    android:layout_marginTop="16dp"
+                    android:background="@drawable/ic_techniquebar"
+                    android:max="200"
+                    android:progressDrawable="@android:color/transparent"
+                    android:thumb="@drawable/ic_ellipse_47"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/made_9">
+
+                </SeekBar>
+
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/eigth_shot"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/title_8"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="64dp"
+                    android:text="@string/eigth"
+                    android:textColor="#02ADD4"
+                    android:textSize="15dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent">
+
+                </TextView>
+
+                <Button
+                    android:id="@+id/made_8"
+                    android:layout_width="137dp"
+                    android:layout_height="33dp"
+                    android:layout_marginTop="8dp"
+                    android:background="@drawable/made_button"
+                    android:text="@string/made"
+                    android:textColor="#02D487"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/title_8">
+
+                </Button>
+
+                <SeekBar
+                    android:id="@+id/indicator_8"
+                    android:layout_width="320dp"
+                    android:layout_height="28dp"
+                    android:layout_marginTop="16dp"
+                    android:background="@drawable/ic_techniquebar"
+                    android:max="200"
+                    android:progressDrawable="@android:color/transparent"
+                    android:thumb="@drawable/ic_ellipse_47"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/made_8">
+
+                </SeekBar>
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/seventh_shot"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/title_7"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="64dp"
+                    android:text="@string/seventh"
+                    android:textColor="#02ADD4"
+                    android:textSize="15dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent">
+
+                </TextView>
+
+                <Button
+                    android:id="@+id/made_7"
+                    android:layout_width="137dp"
+                    android:layout_height="33dp"
+                    android:layout_marginTop="8dp"
+                    android:background="@drawable/made_button"
+                    android:text="@string/made"
+                    android:textColor="#02D487"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/title_7">
+
+                </Button>
+
+                <SeekBar
+                    android:id="@+id/indicator_7"
+                    android:layout_width="320dp"
+                    android:layout_height="28dp"
+                    android:layout_marginTop="16dp"
+                    android:background="@drawable/ic_techniquebar"
+                    android:max="200"
+                    android:progressDrawable="@android:color/transparent"
+                    android:thumb="@drawable/ic_ellipse_47"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/made_7">
+
+                </SeekBar>
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/sixth_shot"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/title_6"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="64dp"
+                    android:text="@string/sixth"
+                    android:textColor="#02ADD4"
+                    android:textSize="15dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent">
+
+                </TextView>
+
+                <Button
+                    android:id="@+id/made_6"
+                    android:layout_width="137dp"
+                    android:layout_height="33dp"
+                    android:layout_marginTop="8dp"
+                    android:background="@drawable/made_button"
+                    android:text="@string/made"
+                    android:textColor="#02D487"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/title_6">
+
+                </Button>
+
+                <SeekBar
+                    android:id="@+id/indicator_6"
+                    android:layout_width="320dp"
+                    android:layout_height="28dp"
+                    android:layout_marginTop="16dp"
+                    android:background="@drawable/ic_techniquebar"
+                    android:max="200"
+                    android:progressDrawable="@android:color/transparent"
+                    android:thumb="@drawable/ic_ellipse_47"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/made_6">
+
+                </SeekBar>
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/fifth_shot"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/title_5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="64dp"
+                    android:text="@string/fifth"
+                    android:textColor="#02ADD4"
+                    android:textSize="15dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent">
+
+                </TextView>
+
+                <Button
+                    android:id="@+id/made_5"
+                    android:layout_width="137dp"
+                    android:layout_height="33dp"
+                    android:layout_marginTop="8dp"
+                    android:background="@drawable/made_button"
+                    android:text="@string/made"
+                    android:textColor="#02D487"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/title_5">
+
+                </Button>
+
+                <SeekBar
+                    android:id="@+id/indicator_5"
+                    android:layout_width="320dp"
+                    android:layout_height="28dp"
+                    android:layout_marginTop="16dp"
+                    android:background="@drawable/ic_techniquebar"
+                    android:max="200"
+                    android:progressDrawable="@android:color/transparent"
+                    android:thumb="@drawable/ic_ellipse_47"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/made_5">
+
+                </SeekBar>
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/fourth_shot"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/title_4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="64dp"
+                android:text="@string/fourth"
+                android:textColor="#02ADD4"
+                android:textSize="15dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+            </TextView>
+
+            <Button
+                android:id="@+id/made_4"
+                android:layout_width="137dp"
+                android:layout_height="33dp"
+                android:layout_marginTop="8dp"
+                android:background="@drawable/made_button"
+                android:text="@string/made"
+                android:textColor="#02D487"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/title_4">
+
+            </Button>
+
+            <SeekBar
+                android:id="@+id/indicator_4"
+                android:layout_width="320dp"
+                android:layout_height="28dp"
+                android:layout_marginTop="16dp"
+                android:background="@drawable/ic_techniquebar"
+                android:max="200"
+                android:progressDrawable="@android:color/transparent"
+                android:thumb="@drawable/ic_ellipse_47"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/made_4">
+
+            </SeekBar>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/third_shot"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/title_3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="64dp"
+                    android:text="@string/third"
+                    android:textColor="#02ADD4"
+                    android:textSize="15dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent">
+
+                </TextView>
+
+                <Button
+                    android:id="@+id/made_3"
+                    android:layout_width="137dp"
+                    android:layout_height="33dp"
+                    android:layout_marginTop="8dp"
+                    android:background="@drawable/made_button"
+                    android:text="@string/made"
+                    android:textColor="#02D487"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/title_3">
+
+                </Button>
+
+                <SeekBar
+                    android:id="@+id/indicator_3"
+                    android:layout_width="320dp"
+                    android:layout_height="28dp"
+                    android:layout_marginTop="16dp"
+                    android:background="@drawable/ic_techniquebar"
+                    android:max="200"
+                    android:progressDrawable="@android:color/transparent"
+                    android:thumb="@drawable/ic_ellipse_47"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/made_3">
+
+                </SeekBar>
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/second_shot"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/title_2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="64dp"
+                    android:text="@string/second"
+                    android:textColor="#02ADD4"
+                    android:textSize="15dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent">
+
+                </TextView>
+
+                <Button
+                    android:id="@+id/made_2"
+                    android:layout_width="137dp"
+                    android:layout_height="33dp"
+                    android:layout_marginTop="8dp"
+                    android:background="@drawable/made_button"
+                    android:text="@string/made"
+                    android:textColor="#02D487"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/title_2">
+
+                </Button>
+
+                <SeekBar
+                    android:id="@+id/indicator_2"
+                    android:layout_width="320dp"
+                    android:layout_height="28dp"
+                    android:layout_marginTop="16dp"
+                    android:background="@drawable/ic_techniquebar"
+                    android:max="200"
+                    android:progressDrawable="@android:color/transparent"
+                    android:thumb="@drawable/ic_ellipse_47"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/made_2">
+
+                </SeekBar>
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/first_shot"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="40dp">
+
+                <TextView
+                    android:id="@+id/title_1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="64dp"
+                    android:text="@string/first"
+                    android:textColor="#02ADD4"
+                    android:textSize="15dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent">
+
+                </TextView>
+
+                <Button
+                    android:id="@+id/made_1"
+                    android:layout_width="137dp"
+                    android:layout_height="33dp"
+                    android:layout_marginTop="8dp"
+                    android:background="@drawable/made_button"
+                    android:text="@string/made"
+                    android:textColor="#02D487"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/title_1">
+
+                </Button>
+
+                <SeekBar
+                    android:id="@+id/indicator_1"
+                    android:layout_width="320dp"
+                    android:layout_height="28dp"
+                    android:layout_marginTop="16dp"
+                    android:background="@drawable/ic_techniquebar"
+                    android:max="200"
+                    android:progressDrawable="@android:color/transparent"
+                    android:thumb="@drawable/ic_ellipse_47"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/made_1">
+
+                </SeekBar>
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+        </LinearLayout>
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
