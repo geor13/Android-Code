@@ -81,7 +81,7 @@ public class Ball implements Serializable { //SOS ///
     }
 
     public boolean hasShot(){
-        if ((roll > 5 &&roll  < 50) && (zAngle > -1.05 && zAngle<-0.7)&&( yAngle > 0&& yAngle<0.70)&&(xAngle > -0.65 && xAngle <0.2))    //  if ((roll > 5 &&roll  < 50) && (zAngle > -1.06 && zAngle<-0.5)&&(yAngle<0.70)&&(xAngle > -0.70 && xAngle>-0.7))
+        if ((roll > 5 &&roll  < 50) && (zAngle > -1.05 && zAngle<-0.7)&&( yAngle > 0&& yAngle<0.70)&&(xAngle > -0.65 && xAngle <0.2))    //  if ((roll > 5 &&roll  < 50) && ...)
         {   //kai edv tha allaxoun oi times
             return true;
         }else{
@@ -91,7 +91,7 @@ public class Ball implements Serializable { //SOS ///
 
     public boolean startingPositionShot()
     {
-        if((roll >= 55 && roll<=80) && (zAngle >=-0.8)&&(yAngle >0.60)&&(xAngle < 0.20 && xAngle >-0.65)) //if((roll >= 55 && roll<=80) && (zAngle<=-0.1 && zAngle >=-0.45)&&(yAngle < 0.90 && yAngle >0.75)&&(xAngle > -0.70 && xAngle>-0.7))
+        if((roll >= 55 && roll<=80) && (zAngle >=-0.7)&&(yAngle >0.50)&&(xAngle < 0.20 && xAngle >-1.05)) //if((roll >= 55 && roll<=80) && ....)
         {
             return true;
         }

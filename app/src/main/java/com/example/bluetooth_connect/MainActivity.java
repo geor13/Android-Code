@@ -266,7 +266,7 @@ public class MainActivity extends AppCompatActivity {
 
 
                     //ΕΔΩ ΘΕΛΕΙ ΑΛΛΑΓΕΣ !!!!!
-                    int pitchProgress = 200 + Math.round(((storeShots[shotCounter].getPitch()-(-30))*(-200))/60);  //
+                    int pitchProgress = 200 + Math.round(((storeShots[shotCounter].getPitch()-(-25))*(-200))/50);  //
 
                     evaluations[shotCounter].setProgress(pitchProgress);
 
